@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác nhận mua hàng - Trang web bán đồ thể thao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Xác nhận mua hàng</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="khuyenmai.html">Chương trình khuyến mãi</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="taikhoan.html">Tài khoản của tôi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="xac-nhan-don-hang">
+        <h2>Xác nhận mua hàng</h2>
+        <div class="order-summary">
+            <h3>Thông tin đơn hàng</h3>
+            <p>Sản phẩm: Áo quần thể thao</p>
+            <p>Giá: 500,000 VND</p>
+            <p>Số lượng: 1</p>
+            <p>Tổng cộng: 500,000 VND</p>
+            <button onclick="confirmOrder()">Xác nhận đặt hàng</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Trang web bán đồ thể thao.</p>
+    </footer>
+
+    <script>
+        function confirmOrder() {
+            alert('Đơn hàng của bạn đã được xác nhận! Cảm ơn bạn đã mua hàng.');
+        }
+    </script>
+</body>
+</html>

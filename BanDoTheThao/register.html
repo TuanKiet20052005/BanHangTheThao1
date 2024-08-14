@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - Trang web bán đồ thể thao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Đăng ký</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="khuyenmai.html">Chương trình khuyến mãi</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="taikhoan.html">Tài khoản của tôi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="register-form">
+        <h2>Đăng ký</h2>
+        <form action="#" method="POST" onsubmit="return validateRegisterForm()">
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Đăng ký</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Trang web bán đồ thể thao.</p>
+    </footer>
+
+    <script>
+        function validateRegisterForm() {
+            var fullname = document.getElementById('fullname').value;
+            var email = document.getElementById('email').value;
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Kiểm tra tính hợp lệ của dữ liệu đăng ký (có thể thêm các điều kiện kiểm tra khác)
+            if (fullname.trim() === '') {
+                alert('Vui lòng nhập họ và tên!');
+                return false;
+            }
+            if (email.trim() === '' || !email.includes('@')) {
+                alert('Email không hợp lệ!');
+                return false;
+            }
+            if (username.trim() === '') {
+                alert('Vui lòng nhập tên đăng nhập!');
+                return false;
+            }
+            if (password.trim() === '' || password.length < 6) {
+                alert('Mật khẩu phải có ít nhất 6 ký tự!');
+                return false;
+            }
+
+            alert('Đăng ký thành công!');
+            return true; // Cho phép form submit
+        }
+    </script>
+</body>
+</html>

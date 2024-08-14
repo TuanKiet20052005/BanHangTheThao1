@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức - Trang web bán đồ thể thao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tin tức</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="khuyenmai.html">Chương trình khuyến mãi</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="taikhoan.html">Tài khoản của tôi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="danh-sach-tin">
+        <h2>Tin tức</h2>
+        <article>
+            <h3>Bộ sưu tập mới nhất cho mùa hè 2024</h3>Í
+            <p class="date">Ngày đăng: 1 tháng 7, 2024</p>
+            <p>Bộ sưu tập thể thao mới nhất cho mùa hè năm 2024 đã ra mắt với nhiều sản phẩm mới và màu sắc sôi động.</p>
+            <button onclick="showNews('bo-suu-tap-moi')">Xem chi tiết</button>
+        </article>
+        <article>
+            <h3>Top 5 đôi giày thể thao hot nhất mùa này</h3>
+            <p class="date">Ngày đăng: 28 tháng 6, 2024</p>
+            <p>Top 5 đôi giày thể thao được ưa chuộng nhất mùa này với thiết kế mới và công nghệ tiên tiến.</p>
+            <button onclick="showNews('top-giay-the-thao')">Xem chi tiết</button>
+        </article>
+        <article>
+            <h3>Các bài tập thể dục dành cho người bận rộn</h3>
+            <p class="date">Ngày đăng: 25 tháng 6, 2024</p>
+            <p>Một số bài tập đơn giản và hiệu quả cho những người có lịch trình bận rộn nhưng vẫn muốn duy trì sức khỏe.</p>
+            <button onclick="showNews('bai-tap-the-duc')">Xem chi tiết</button>
+        </article>
+        <article>
+            <h3>Những lợi ích của việc chạy bộ hàng ngày</h3>
+            <p class="date">Ngày đăng: 20 tháng 6, 2024</p>
+            <p>Chạy bộ không chỉ giúp giảm cân mà còn mang lại nhiều lợi ích sức khỏe và tinh thần khác cho bạn.</p>
+            <button onclick="showNews('loi-ich-chay-bo')">Xem chi tiết</button>
+        </article>
+        <article>
+            <h3>Phương pháp tập luyện hiệu quả cho người mới bắt đầu</h3>
+            <p class="date">Ngày đăng: 15 tháng 6, 2024</p>
+            <p>Các bước cơ bản để bắt đầu luyện tập hiệu quả và an toàn, phù hợp cho người mới bắt đầu tập thể dục.</p>
+            <button onclick="showNews('tap-luyen-hieu-quả')">Xem chi tiết</button>
+        </article>
+    </section>
+
+    <footer>
+        <p>Trang web bán đồ thể thao.</p>
+    </footer>
+
+    <script>
+        function showNews(newsId) {
+            if (newsId === 'bo-suu-tap-moi') {
+                alert('Bộ sưu tập mới nhất cho mùa hè 2024 đã ra mắt!');
+                // Có thể chuyển hướng đến trang chi tiết bài tin tức 'bo-suu-tap-moi' nếu cần
+            } else if (newsId === 'top-giay-the-thao') {
+                alert('Top 5 đôi giày thể thao hot nhất mùa này!');
+                // Có thể chuyển hướng đến trang chi tiết bài tin tức 'top-giay-the-thao' nếu cần
+            } else if (newsId === 'bai-tap-the-duc') {
+                alert('Các bài tập thể dục dành cho người bận rộn');
+                // Có thể chuyển hướng đến trang chi tiết bài tin tức 'bai-tap-the-duc' nếu cần
+            } else if (newsId === 'loi-ich-chay-bo') {
+                alert('Những lợi ích của việc chạy bộ hàng ngày');
+                // Có thể chuyển hướng đến trang chi tiết bài tin tức 'loi-ich-chay-bo' nếu cần
+            } else if (newsId === 'tap-luyen-hieu-quả') {
+                alert('Phương pháp tập luyện hiệu quả cho người mới bắt đầu');
+                // Có thể chuyển hướng đến trang chi tiết bài tin tức 'tap-luyen-hieu-quả' nếu cần
+            }
+        }
+    </script>
+</body>
+</html>
